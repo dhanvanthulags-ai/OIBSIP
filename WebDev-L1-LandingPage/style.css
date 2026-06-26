@@ -194,6 +194,153 @@ button {
     line-height: 1.8;
 }
 
+/* ===== PACKAGES/DESTINATIONS SECTION ===== */
+.packages {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.package-card {
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.package-image {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    color: var(--white);
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.package-card h3 {
+    font-size: 22px;
+    color: var(--primary-color);
+    padding: 20px 20px 10px;
+    margin: 0;
+}
+
+.package-card .destination {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.package-card .description {
+    font-size: 16px;
+    color: var(--text-light);
+    padding: 10px 20px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.package-card .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--accent-color);
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.package-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 12px 20px;
+    margin: 0 20px 20px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.package-btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonials {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 80px 0;
+}
+
+.testimonials .section-title {
+    color: var(--white);
+    margin-bottom: 60px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.testimonial-card .feedback {
+    font-size: 16px;
+    color: var(--text-dark);
+    font-style: italic;
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+.traveler-info {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid var(--bg-light);
+}
+
+.traveler-info h4 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 0 0 5px 0;
+}
+
+.traveler-info .location {
+    font-size: 14px;
+    color: var(--text-light);
+    margin: 0;
+}
+
 /* ===== ABOUT SECTION ===== */
 .about {
     background-color: var(--bg-light);
@@ -361,6 +508,34 @@ button {
         gap: 30px;
     }
 
+    /* Packages Grid */
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .package-card h3 {
+        font-size: 20px;
+    }
+
+    .package-card .price {
+        font-size: 24px;
+    }
+
+    /* Testimonials Grid */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-card .feedback {
+        font-size: 15px;
+    }
+
     /* About Section */
     .about-content {
         flex-direction: column;
@@ -414,5 +589,14 @@ button {
 
     .about-text p {
         font-size: 16px;
+    }
+
+    /* Nav Links */
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
     }
 }
